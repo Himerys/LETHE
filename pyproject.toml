@@ -3,7 +3,7 @@ requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "LETHE.exe"
+name = "lethe-fpd"
 version = "0.4.2"
 description = "Scan your mailbox, find every service that knows you, and decimate your digital footprint with GDPR Art. 17 erasure requests."
 readme = "README.md"
