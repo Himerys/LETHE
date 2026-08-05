@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lethe-fpd"
-version = "0.4.2"
+version = "0.4.3"
 description = "Scan your mailbox, find every service that knows you, and decimate your digital footprint with GDPR Art. 17 erasure requests."
 readme = "README.md"
 requires-python = ">=3.10"
