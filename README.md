@@ -48,7 +48,7 @@ data — so you can share it, e.g. with the JustDeleteMe project.
 ## Install
 
 ```bash
-git clone https://github.com/Himerys/Footprint_decimator
+git clone https://github.com/Himerys/LETHE
 cd Footprint_decimator
 python -m venv .venv
 . .venv/bin/activate          # Windows: .venv\Scripts\activate
