@@ -49,7 +49,7 @@ data — so you can share it, e.g. with the JustDeleteMe project.
 
 ```bash
 git clone https://github.com/Himerys/LETHE
-cd Footprint_decimator
+cd LETHE
 python -m venv .venv
 . .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install .
@@ -137,7 +137,7 @@ fpd export-contacts  shareable contact knowledge base (no personal data)
   are read directly from the local mbox files.
 - **`fpd check`** reads your *local* mail — let Betterbird fetch new mail
   before running it.
-- JustDeleteMe data (`footprint_decimator/data/sites.json`) courtesy of the
+- JustDeleteMe data (`LETHE/data/sites.json`) courtesy of the
   [JustDeleteMe](https://github.com/jdorfman/justdelete.me) project (MIT).
 
 ---
