@@ -1,0 +1,40 @@
+{
+  "_comment": "Copy this file to config.json and fill in your own data. config.json is gitignored — your personal info never leaves your machine.",
+
+  "sender_name": "Max Mustermann",
+  "aliases": ["Maxi Mustermann", "M. Mustermann"],
+
+  "language": "auto",
+  "_language_options": "auto = decide per service (German TLD / German mail content -> German letter), or force 'de' / 'en'",
+
+  "supervisory_authority": "",
+  "_supervisory_authority_hint": "Optional: name your local data protection authority (e.g. 'LfDI Baden-Wuerttemberg'). Left empty, the letters just say 'the competent supervisory authority'.",
+
+  "profile_path": "",
+  "_profile_path_hint": "Optional: explicit path to your Thunderbird/Betterbird profile folder. Leave empty for auto-discovery.",
+
+  "accounts": [
+    {
+      "email": "max@example.com",
+      "smtp_host": "smtp.example.com",
+      "smtp_port": 465,
+      "security": "ssl",
+      "username": "max@example.com",
+      "password": "",
+      "_password_hint": "Leave empty to be prompted at send time, or set the FPD_SMTP_PASSWORD environment variable. For Gmail/Outlook use an app password."
+    }
+  ],
+
+  "send_delay_seconds": 5,
+  "send_daily_limit": 400,
+
+  "sniffer": {
+    "workers": 8,
+    "max_pages": 15,
+    "timeout": 10,
+    "polite_delay": 0.5,
+    "locales": ["en", "de"],
+    "respect_robots": true,
+    "guess_subdomains": false
+  }
+}
