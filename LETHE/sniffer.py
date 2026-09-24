@@ -20,9 +20,10 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
+from LETHE import __version__
 from LETHE.util import registrable_domain
 
-USER_AGENT = "FootprintDecimator/0.4 (GDPR Art.17 contact discovery)"
+USER_AGENT = f"LETHE/{__version__} (GDPR Art.17 contact discovery; +https://github.com/Himerys/LETHE)"
 
 # path keywords, best first — order defines crawl priority
 PRIORITY_KEYWORDS: list[tuple[int, tuple[str, ...]]] = [

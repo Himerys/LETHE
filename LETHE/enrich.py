@@ -18,7 +18,7 @@ from LETHE.util import registrable_domain
 def _sites_path() -> Path | None:
     candidates = [Path(__file__).resolve().parent / "data" / "sites.json"]
     if getattr(sys, "_MEIPASS", None):  # PyInstaller bundle
-        candidates.insert(0, Path(sys._MEIPASS) / "footprint_decimator" / "data" / "sites.json")
+        candidates.insert(0, Path(sys._MEIPASS) / "LETHE" / "data" / "sites.json")
     for p in candidates:
         if p.exists():
             return p

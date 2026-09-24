@@ -78,8 +78,8 @@ pip install . pyinstaller
 pyinstaller fpd.spec           # -> dist/fpd.exe
 ```
 
-(The GitHub Action in `.github/workflows/build-exe.yml` builds it on every
-tagged release.)
+(There is no automated exe build yet: build it locally with the two commands
+above and attach `dist/fpd.exe` to the GitHub release.)
 
 ---
 
