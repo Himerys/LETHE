@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lethe-fpd"
-version = "0.4.3.1"
+dynamic = ["version"]
 description = "Scan your mailbox, find every service that knows you, and decimate your digital footprint with GDPR Art. 17 erasure requests."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -35,6 +35,9 @@ Homepage = "https://github.com/Himerys/LETHE"
 
 [tool.setuptools]
 packages = ["LETHE"]
+
+[tool.setuptools.dynamic]
+version = { attr = "LETHE.__version__" }
 
 [tool.setuptools.package-data]
 LETHE = ["data/*.json"]
