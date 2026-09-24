@@ -1,0 +1,27 @@
+# --- Personal data (never commit!) ---
+# Your config: name, e-mail addresses, possibly the SMTP password
+config.json
+# Scan database: senders, subjects, contacts from your mailbox
+footprint.db
+footprint.db-journal
+*.db
+# Generated drafts, CSVs and exports
+out/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# --- Build output (python -m build / PyInstaller) ---
+build/
+dist/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
